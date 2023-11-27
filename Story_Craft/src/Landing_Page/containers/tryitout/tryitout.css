@@ -1,0 +1,208 @@
+.landing__tryitout {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 100px;
+    margin: 2rem 4rem;
+    background: var(--color-btn);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+.landing__tryitout-heading{
+    margin-bottom: 4rem;
+}
+
+.landing__tryitout-heading h1,
+.landing__tryitout-Form h1{
+    color: var(--color-bg);
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.landing__tryitout-heading h1:last-child {
+    font-weight: 300;
+}
+
+.landing__tryitout-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.landing__tryitout-Form_text-form-label,
+.landing__tryitout-Form_image-form-label {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.landing__tryitout-Form_text-form-label{
+    display: flex;
+    font-weight: 800;
+
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.landing__tryitout-Form_image-form-label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.landing__tryitout-Form_text-input{
+    border-radius: 40px;
+    border: 2px solid #FFF;
+          font-weight: 800;
+
+    outline: none;
+    background: local;
+    height: 60px;
+    margin-top: 0.5rem;
+}
+
+.landing__tryitout-Form_file-input::-webkit-file-upload-button{
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    background: local;
+    font-family: var(--font-family);
+    color: #FFF;
+    margin-top: 0.5rem;
+    height: 50px;
+}
+
+
+.landing__tryitout-Form_submit-button {
+    border-radius: 40px;
+    background: #FFF;
+
+    font-size: 16px;
+    font-family: var(--font-family);
+    color: var(--color-bg);
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    width: 214px;
+    height: 48px;
+    top: 4944px;
+    left: 613px;
+}
+
+.landing__tryitout-Form_text-input {
+
+    font-size: large;
+    color: #FFF;
+    padding: 1rem;
+    font-family: var(--font-family);
+          font-weight: 800;
+
+}
+
+.landing__tryitout-Form_perspective{
+    margin: 2rem 0;
+}
+
+.landing__tryitout-Form_perspective label {
+    font-size: large;
+    color: #FFF;
+    padding: 1rem;
+    font-family: var(--font-family);
+    cursor: pointer;
+    font-weight: 800;
+
+}
+
+.landing__tryitout-Form_perspective input {
+    margin: 0 1rem;
+          font-weight: 800;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .landing__tryitout {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+
+    .landing__tryitout-Form_submit-button {
+        text-align: center;
+        width: 150px;
+        height: 40px;
+    }
+
+    .landing__tryitout-Form_submit-button h4{
+        font-size: 10px;
+    }
+    
+
+    .landing__tryitout-Form_perspective label {
+        font-size: 18px;
+        margin: none;
+        padding: 0;
+        font-weight: 800;
+    }
+    .landing__tryitout-Form_text-input {
+        width: 220px;
+    }
+  
+    .landing__tryitout-heading {
+      margin-bottom: 1.5rem;
+    }
+    .landing__tryitout-heading h1:first-child{
+        margin-bottom: 1rem;
+    }
+  
+    .landing__tryitout-heading h1,
+    .landing__tryitout-Form h1 {
+      font-size: 20px;
+    }
+  
+    .landing__tryitout-Form_text-form-label,
+    .landing__tryitout-Form_image-form-label {
+      font-size: 18px;
+    }
+  
+    .landing__tryitout-Form_text-input {
+      border-radius: 30px;
+      height: 40px;
+      margin-top: 0.5rem;
+    }
+  
+    .landing__tryitout-Form_file-input::-webkit-file-upload-button {
+      border-radius: 30px;
+      height: 35px;
+    }
+  
+    .landing__tryitout-Form_text-input,
+    .landing__tryitout-Form_file-input::-webkit-file-upload-button,
+    .landing__tryitout-Form_submit-button {
+      font-size: 16px;
+    }
+
+    .landing__tryitout-heading img {
+        display: none;
+    }
+    .landing__tryitout-heading {
+        margin: 1rem 0;
+    }
+  }
+  

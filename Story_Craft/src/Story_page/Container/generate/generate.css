@@ -1,0 +1,204 @@
+/* generate.css */
+
+.story__generate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding-right: 0.5rem;
+}
+  
+  .story__generate-image {
+    flex: 1;    
+  }
+  
+  .story__generate-block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+  }
+  
+  .story__generate-content {
+    flex: 1; 
+  }
+  
+  .story__generate-content_story p {
+    color: #fff;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;    
+
+  }
+
+  .story__generate-content_story {
+    margin: 0rem 4rem;
+  }
+
+  .story__generate-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .story__generate-controls_audio {
+    margin-bottom: 2rem;
+  }
+
+  audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider {
+    font-size: 14px;
+    font-family: var(--font-family);
+    color: var(--color-bg);
+  }
+
+
+  .story__generate-controls_audio audio {
+    
+    
+    
+    width: 524px;
+    height: 72px;
+    padding: 0 2rem;
+    border-radius: 40px;
+  }
+
+  .story__generate-controls_ask input {
+    border: 2px solid #FFFFFF;
+    background: local;
+    outline: none;
+  
+
+    width: 524px;
+    height: 72px;
+    top: 4362px;
+    left: 725px;
+    border-radius: 40px;
+    padding: 0 2rem;
+
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 20px;
+      }
+
+      .story__generate-content_story p{
+        line-height: 30px;
+      }
+
+      .story__generate-controls_ask {
+        display: flex;
+        flex-direction: column;
+      }
+
+    .story__generate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
+      padding-right: 0.5rem;
+  }
+  
+  .story__generate-image img {
+      border-radius: 15px; 
+      width: 100%; 
+  }
+  
+  .story__generate-block1 {
+      display: flex;
+      flex-direction: column; 
+      justify-content: space-between;
+      margin-bottom: 2rem; 
+  }
+  
+  .story__generate-content_story {
+      margin: 1rem 0;
+  }
+  
+  .story__generate-content_story p {
+      color: #fff;
+      font-family: var(--font-family);
+      font-weight: 700;
+  }
+
+  .qa_new {
+    padding: 1rem;
+    margin: 2rem 4rem;
+  }
+
+  .qa_new p{
+    color: #fff;
+      font-family: var(--font-family);
+      font-size: 18px; 
+      font-weight: 600;
+      line-height: 30px;
+  }
+  
+
+  .story__generate-controls_ask {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  @media only screen and (min-width: 768px) {
+      .story__generate-block1 {
+          flex-direction: row; /* Change back to row for larger screens */
+      }
+  
+      .story__generate-content_story {
+          margin: 0rem 4rem;
+      }
+  
+      .story__generate-content_story p {
+          font-size: 20px; /* Adjust font size for larger screens */
+      }
+  
+      .story__generate-controls_audio audio,
+      .story__generate-controls_ask input {
+        width: 400px;
+        height: 56px;
+        top: unset;
+        left: unset;
+        text-align: left;
+        border-radius: 40px;
+        padding: 0 1rem;
+        font-size: 16px;
+      }
+  }
+
+  @media only screen and (max-width: 520px) {
+    
+    .story__generate-block1{
+      font-size: 14px;
+      margin-left: auto;
+      margin-right: 1rem;
+    }
+
+    .qa_new {
+      margin: 1rem 1.5rem;
+    }
+    .qa_new p{
+      font-size: 14px;
+    }
+
+    .story__generate-controls_audio audio,
+    .story__generate-controls_ask input {
+      width: 300px;
+    height: 36px;
+    top: unset;
+    left: unset;
+    text-align: left;
+    border-radius: 40px;
+    padding: 0 0.5rem;
+    font-size: 12px;
+
+    } 
+  }

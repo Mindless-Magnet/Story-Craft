@@ -1,0 +1,189 @@
+.landing__Brand {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .landing__Brand-Introduction {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .landing__Brand-Introduction_heading,
+  .landing__Brand-Why_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 2rem;
+  }
+  
+  .landing__Brand-Introduction_heading h1:first-child,
+  .landing__Brand-About_content h1:first-child,
+  .landing__Brand-Why_heading h1:first-child {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  .landing__Brand-Introduction_heading h1,
+  .landing__Brand-About_content h1,
+  .landing__Brand-Why_heading h1 {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .landing__Brand-Introduction_content,
+  .landing__Brand-Why_content {
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+  
+  .landing__Brand-Introduction_content p,
+  .landing__Brand-About_content p,
+  .landing__Brand-Why_content p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 800;
+    line-height: 30px;
+  }
+  
+  .landing__Brand-About {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  
+  .landing__Brand-About_image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: none;
+    outline: none;
+    height: 100%;
+    margin-right: 2rem;
+    border-radius: 120px 50px;
+    background: #a3a3a3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .landing__Brand-About_image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 120px 50px;
+    background: #a3a3a3;
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .landing__Brand-About_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 55%;
+    margin-left: auto;
+  }
+  
+  .landing__Brand-About_content h1:first-child {
+    margin-bottom: auto;
+  }
+  
+  .landing__Brand-About_content h1 {
+    margin-bottom: 4rem;
+  }
+  
+  .landing__Brand-About_content p {
+    margin-bottom: 2rem;
+  }
+  
+  .landing__Brand-About_content button {
+    margin-top: 2rem;
+    width: 214px;
+    height: 48px;
+    top: 1691px;
+    left: 726px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    background: var(--color-btn);
+    border: none;
+    outline: none;
+  }
+  
+  .landing__Brand-Why {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 550px) {
+
+    .landing__Brand {
+      padding: none;
+      margin: none;
+    }
+    .landing__Brand-Introduction,
+    .landing__Brand-About,
+    .landing__Brand-Why {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .landing__Brand-Introduction_heading img,
+    .landing__Brand-Why_heading img {
+      display: none;
+    }
+    .landing__Brand-Introduction_heading,
+    .landing__Brand-About_heading,
+    .landing__Brand-Why_heading {
+      margin: unset;
+    }
+    .landing__Brand-Introduction_content,
+    .landing__Brand-About_content,
+    .landing__Brand-Why_content {
+      margin: unset;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+    }
+    .landing__Brand-Introduction_content p,
+    .landing__Brand-About_content p,
+    .landing__Brand-Why_content p {
+      text-align: left;
+      padding: none;
+      margin: none;
+    }
+  
+    .landing__Brand-About_heading {
+      display: none;
+    }
+
+    .landing__Brand-Introduction_content h1,
+    .landing__Brand-About_content h1,
+    .landing__Brand-Why_content h1 {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  

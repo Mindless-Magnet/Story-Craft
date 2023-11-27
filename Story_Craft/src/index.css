@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');:root {
+  --font-family: 'Montserrat', sans-serif;
+
+  --image-bg: url('/src/Landing_Page/assets/img3.png');
+
+  --gradient-bg: linear-gradient(90deg, rgba(72,0,107,1) 23%, rgba(34,1,65,1) 66%);
+
+  --gradient-text: linear-gradient(269deg, #C0B7E8 -3.72%, #8176AF 82.17%);
+  --gradient-bar: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+  
+  --color-bg:#302C42;
+  --color-footer: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  --color-btn: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+
+}

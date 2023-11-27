@@ -1,0 +1,18 @@
+.landing__Features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.landing__Features img {
+    width: 252px;
+    height: auto;
+    filter: grayscale(1);
+    opacity: 0.5;
+    margin-top: 1rem;
+}
+

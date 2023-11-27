@@ -1,0 +1,119 @@
+.landing__header{
+    display: flex;
+    flex-direction: row;   
+    background: var(--gradient-bg);
+}
+
+.landing__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.landing__header-content h1 {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 46px;
+    font-weight: bolder;
+    line-height: normal;
+}
+
+.landing__header-content p {
+    color: #FFF;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 1rem;
+}
+
+.landing__header-content_button{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.landing__header-content_button button {
+    border-radius: 40px;
+    background: var(--color-btn);
+
+    width: 214px;
+    height: 48px;
+    top: 589px;
+    left: 84px;
+
+    font-family: var(--font-family);
+    color: #343045;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: normal;
+
+    border: none;
+    outline: none;
+
+}
+
+
+.landing__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 100px 100px 100px 240px;
+}
+
+.landing__header-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px 100px 100px 240px;
+    border: 20px solid rgba(0, 0, 0, 0.13);
+
+}
+
+@media screen and (max-width: 1050px){
+    .landing__header {
+        flex-direction: column;
+    }
+    .landing__header-content{
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .landing__header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .landing__header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .landing__header-content_button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 490px) {
+    .landing__header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .landing__header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .landing__header-content_button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
