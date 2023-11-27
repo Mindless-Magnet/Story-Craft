@@ -18,7 +18,7 @@ In a world saturated with mindless scrolling and content overload, Story Craft s
 pip install -r requirements.txt
 ```
 
-## Add you Hugging face api key and Open ai key in below file
+## Add your Hugging face api key and Open ai key in below file
 
 ```console
 backend-main/app/dao/.env
