@@ -1,5 +1,12 @@
 /* generate.css */
 
+.ask_loading {
+  display: flex;
+  justify-content: center;
+  gap: 1rem ;
+  align-items: center;
+}
+
 .story__generate {
     display: flex;
     flex-direction: column;

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
 import axios from 'axios';
+import { SpinnerCircular } from 'spinners-react';
 
 import './generate.css'
 
@@ -13,11 +14,14 @@ const Generate = ({sid, story}) => {
 
     console.log(soundSource)
 
+    const [loading, setLoading] = useState(false);
+
     const [inputValue, setInputValue] = useState('');
 
     const handleKeyPress = async (event) => {
         if (event.key === 'Enter') {
           try {
+            setLoading(true)
             const datatosend = {
                 session_id : 0,
                 story_id : parseInt(sid, 10),
@@ -55,8 +59,10 @@ const Generate = ({sid, story}) => {
             
             
             setInputValue('');
+            setLoading(false)
           } catch (error) {
             console.error('Error sending data to the backend:', error.message);
+            setLoading(false)
           }
         }
       };
@@ -92,11 +98,16 @@ const Generate = ({sid, story}) => {
             </div>
             <div className="story__generate-controls_ask">
                 <div className='QA'></div>
+                <div className="ask_loading">
                 <input type="text" 
                 value={inputValue}
                 onChange={handleChange}
                 onKeyPress={handleKeyPress}
                 placeholder='Ask a Question' />
+                {loading && (
+                  <SpinnerCircular size={80} thickness={100} speed={100} color='#C0B7E8' secondaryColor='#8176AF'/>
+                )}
+                </div>
             </div>
 
         </div>

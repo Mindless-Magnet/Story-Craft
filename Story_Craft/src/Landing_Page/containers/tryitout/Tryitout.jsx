@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SpinnerCircular } from 'spinners-react';
 import axios from 'axios';
 import divider from '../../assets/divider.svg';
 import './tryitout.css';
@@ -7,6 +8,8 @@ import './tryitout.css';
 const MyForm = () => {
 
   const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     textInput: '',
@@ -45,6 +48,7 @@ const MyForm = () => {
     };
 
     try {
+      setLoading(true)
       const response = await axios.post('http://localhost:8000/story/generate/', formDataToSend);
       navigate('/story', { state: { responseData: response.data } });
       
@@ -54,8 +58,10 @@ const MyForm = () => {
         fileInput: null,
         perspective: 'first', // Reset perspective to default after submission
       });
+      setLoading(false);
     } catch (error) {
       console.error('Error:', error);
+      setLoading(false);
     }
   };
 
@@ -69,11 +75,16 @@ const MyForm = () => {
   return (
     <div className='landing__tryitout-main section__padding' id='try'>
       <div className="landing__tryitout">
+      
         <div className="landing__tryitout-heading">
           <h1>TRY STORY CRAFT</h1>
           <img src={divider} alt='divider' />
           <h1>Let's Build Your Story</h1>
         </div>
+        {loading && (
+        <SpinnerCircular size={100} thickness={100} speed={100} color='#C0B7E8' secondaryColor='#8176AF'/>
+      )}
+      {!loading && (
         <form className="landing__tryitout-Form" onSubmit={handleSubmit}>
           <div className="landing__tryitout-Form_perspective">
             <label>
@@ -124,6 +135,7 @@ const MyForm = () => {
             <h4>SEND TO STORY CRAFT</h4>
           </button>
         </form>
+        )}
       </div>
     </div>
   );
