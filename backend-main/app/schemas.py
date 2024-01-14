@@ -9,6 +9,11 @@ class prompt(BaseModel):
     prompt:str
     person:str
 
+class imageprompt(BaseModel):
+    prompt:str
+    person:str
+    image:str
+
 class image(BaseModel):
     #base64 encoded image
     image:str
