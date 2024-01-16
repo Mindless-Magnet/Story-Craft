@@ -41,12 +41,21 @@ const MyForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formDataToSend = {
-        prompt: formData.textInput,
+    if(formData.fileInput){
+      const img = formData.fileInput
+      
+       let binaryString = '';
+        for (let i = 0; i < img.length; i++) {
+           binaryString += String.fromCharCode(img[i]);
+          }
+
+        const base64String = btoa(binaryString);
+
+        const formDataToSend = {
+        prompt: base64String,
         person: formData.perspective,
 
     };
-
     try {
       setLoading(true)
       const response = await axios.post('http://localhost:8000/story/generate/', formDataToSend);
@@ -63,11 +72,38 @@ const MyForm = () => {
       console.error('Error:', error);
       setLoading(false);
     }
+    
+
+    }
+    else{
+      const formDataToSend = {
+        prompt: formData.textInput,
+        person: formData.perspective,
+
+    };
+    
+
+    try {
+      setLoading(true)
+      const response = await axios.post('http://localhost:8000/story/image/', formDataToSend);
+      navigate('/story', { state: { responseData: response.data } });
+      
+
+      setFormData({
+        textInput: '',
+        fileInput: null,
+        perspective: 'first', // Reset perspective to default after submission
+      });
+      setLoading(false);
+    } catch (error) {
+      console.error('Error:', error);
+      setLoading(false);
+    }
   };
+  }
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      // Call your function here
       handleSubmit(e);
     }
   };
