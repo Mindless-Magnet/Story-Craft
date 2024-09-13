@@ -12,3 +12,28 @@ Our app employs GPT-3.5 for crafting compelling stories, Stability AI for genera
 
 In a world saturated with mindless scrolling and content overload, Story Craft stands out as a beacon of meaningful engagement for kids. Rather than succumbing to endless streams of digital noise, our app offers a purposeful escape into a realm of captivating storytelling. With GPT-3.5 crafting enriching narratives, Stability AI providing visually stimulating images, Cocqui lending natural voices, and Salesforce adding insightful image captions, Story Craft becomes a curated space for imaginative exploration. It empowers kids to shift from passive consumption to active participation, sparking creativity and instilling valuable lessons in a way that resonates beyond the screen. Choose Story Craft for a mindful and transformative digital experience.
 
+## Installing python dependencies (preferably use an environment)
+
+```console
+pip install -r requirements.txt
+```
+
+## Add your Hugging face api key and Open ai key in below file
+
+```console
+backend-main/app/dao/.env
+```
+
+## Front-End ( React ) Terminal 1
+
+```console
+cd Story_Craft
+npm install
+npm start
+```
+
+## Backend ( FastAPI ) Terminal 2
+
+```console
+uvicorn backend-main.app.main:app --reload
+```
